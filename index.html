@@ -3,85 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rituraj Portfolio</title>
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com"></script>
+<title>AAYUSH BHAI</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '963162952854557');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=963162952854557&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg,#0f172a,#1e293b);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
-.card {
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
-  border-radius: 15px;
-  transition: 0.3s;
+
+body{
+    background:#070b12;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
-.card:hover {
-  transform: translateY(-5px);
+
+.container{
+    width:100%;
+    max-width:380px;
+    text-align:center;
 }
+
+/* TOP BAR */
+.top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.live{
+    background:#0f2;
+    color:#000;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.joined{
+    font-size:12px;
+    color:#aaa;
+}
+
+/* PROFILE */
+.profile{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    margin:auto;
+    background:url('https://image2url.com/r2/default/images/1774843825794-56abfff1-78f8-46a9-986c-2b204a2c91f8.jpg') center/cover;
+    border:3px solid #00eaff;
+    box-shadow:0 0 20px #00eaff;
+}
+
+/* TEXT */
+h1{
+    margin-top:15px;
+    font-size:22px;
+}
+
+.sub{
+    color:#00eaff;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.desc{
+    font-size:13px;
+    color:#bbb;
+    margin:10px 0;
+}
+
+/* USERS */
+.users{
+    background:#111722;
+    padding:12px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.circle{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:bold;
+    color:black;
+}
+
+.r{background:red;}
+.a{background:orange;}
+.s{background:lime;}
+.k{background:cyan;}
+
+.users span{
+    color:#ccc;
+    font-size:13px;
+}
+
+/* TIMER */
+.timer-text{
+    font-size:12px;
+    color:#aaa;
+}
+
+.timer-text span{
+    color:#00eaff;
+}
+
+.time{
+    font-size:28px;
+    margin:8px 0;
+}
+
+/* PROGRESS */
+.progress{
+    height:6px;
+    background:#222;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.bar{
+    height:100%;
+    width:100%;
+    background:linear-gradient(90deg,#00eaff,#00ff88);
+    transition:1s linear;
+}
+
+/* BUTTONS */
+.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    margin:10px 0;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.primary{
+    background:linear-gradient(90deg,#00c6ff,#00eaff);
+    color:black;
+    box-shadow:0 0 15px #00eaff;
+}
+
+.secondary{
+    background:#1a1f2b;
+    color:#ddd;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:15px;
+    font-size:11px;
+    color:#666;
+}
+
 </style>
-
 </head>
-<body class="text-white">
 
-<div class="max-w-4xl mx-auto p-5 text-center">
+<body>
 
-  <!-- HERO -->
-  <section class="mt-10">
-    <h1 class="text-4xl font-bold">Rituraj</h1>
-    <p class="text-gray-300 mt-2">Fullstack Developer 🚀</p>
-    <button class="mt-4 px-6 py-2 bg-blue-400 text-black rounded-lg">Resume</button>
-  </section>
+<div class="container">
 
-  <!-- SKILLS -->
-  <section class="mt-16">
-    <h2 class="text-2xl font-semibold mb-5">Skills</h2>
-    <div class="flex flex-wrap justify-center gap-3">
-      <span class="card px-4 py-2">HTML</span>
-      <span class="card px-4 py-2">CSS</span>
-      <span class="card px-4 py-2">JavaScript</span>
-      <span class="card px-4 py-2">React</span>
-      <span class="card px-4 py-2">Python</span>
+    <div class="top">
+        <div class="live">● LIVE NOW</div>
+        <div class="joined">6,501 joined</div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section class="mt-16">
-    <h2 class="text-2xl font-semibold mb-5">Projects</h2>
+    <div class="profile"></div>
 
-    <div class="grid md:grid-cols-2 gap-4">
+    <h1>𝟗𝐗 𝐏𝐑𝐎𝐅𝐈𝐓 𝐁𝐘 SECRET TOOL</h1>
+    <div class="sub">TENGENADS</div>
 
-      <div class="card p-4">
-        <h3 class="text-lg font-semibold">E-commerce</h3>
-        <p class="text-gray-300">Shopping website with payment</p>
-      </div>
+    <div class="desc">100% Free Access • Daily Accurate Tips</div>
 
-      <div class="card p-4">
-        <h3 class="text-lg font-semibold">Blog Website</h3>
-        <p class="text-gray-300">News blogging platform</p>
-      </div>
-
-      <div class="card p-4">
-        <h3 class="text-lg font-semibold">AI Chatbot</h3>
-        <p class="text-gray-300">Support chatbot</p>
-      </div>
-
+    <div class="users">
+        <div class="circle r">R</div>
+        <div class="circle a">A</div>
+        <div class="circle s">S</div>
+        <div class="circle k">K</div>
+        <span>Join 6,501+ others today</span>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="mt-16 mb-10">
-    <h2 class="text-2xl font-semibold mb-3">About</h2>
-    <p class="text-gray-300">I build modern and responsive websites.</p>
-  </section>
+    <div class="timer-text">LINK EXPIRES IN <span id="seconds">20</span> SECONDS</div>
+    <div class="time" id="time">00:20</div>
+
+    <div class="progress">
+        <div class="bar" id="bar"></div>
+    </div>
+
+    <a href="https://t.me/+5D2xoUsESP9jYzBl" class="btn primary">JOIN FREE ON TELEGRAM</a>
+    <a href="https://t.me/+5D2xoUsESP9jYzBl" class="btn secondary">🔒 Click Here for Instant Access</a>
+
+    <div class="footer">ADS © TENGENADS</div>
 
 </div>
+
+<script>
+let total = 20;
+let current = total;
+
+let timeEl = document.getElementById("time");
+let secEl = document.getElementById("seconds");
+let bar = document.getElementById("bar");
+
+let interval = setInterval(() => {
+    current--;
+
+    let percent = (current / total) * 100;
+    bar.style.width = percent + "%";
+
+    let display = current < 10 ? "00:0" + current : "00:" + current;
+
+    timeEl.innerText = display;
+    secEl.innerText = current;
+
+    if(current <= 0){
+        clearInterval(interval);
+        window.location.href = "https://t.me/+5D2xoUsESP9jYzBl";
+    }
+
+},1000);
+</script>
 
 </body>
 </html>
