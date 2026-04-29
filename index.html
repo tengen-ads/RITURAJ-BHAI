@@ -1,127 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rituraj Portfolio</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-    body {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+</style>
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #cbd5e1;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 15px;
-      background: #38bdf8;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    section {
-      margin-top: 50px;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 10px;
-      margin: 5px;
-      border-radius: 5px;
-    }
-
-    .project {
-      background: #1e293b;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
-      }
-    }
-  </style>
 </head>
+<body class="text-white">
 
-<body>
-
-<div class="container">
+<div class="max-w-4xl mx-auto p-5 text-center">
 
   <!-- HERO -->
-  <section>
-    <h1>Rituraj</h1>
-    <p>Fullstack Web Developer</p>
-    <p>Building modern web apps 🚀</p>
-    <a href="#" class="btn">Download Resume</a>
+  <section class="mt-10">
+    <h1 class="text-4xl font-bold">Rituraj</h1>
+    <p class="text-gray-300 mt-2">Fullstack Developer 🚀</p>
+    <button class="mt-4 px-6 py-2 bg-blue-400 text-black rounded-lg">Resume</button>
   </section>
 
   <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Python</span>
-      <span>Django</span>
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold mb-5">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="card px-4 py-2">HTML</span>
+      <span class="card px-4 py-2">CSS</span>
+      <span class="card px-4 py-2">JavaScript</span>
+      <span class="card px-4 py-2">React</span>
+      <span class="card px-4 py-2">Python</span>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold mb-5">Projects</h2>
 
-    <div class="project">
-      <h3>E-commerce Website</h3>
-      <p>Full shopping website with payment integration</p>
+    <div class="grid md:grid-cols-2 gap-4">
+
+      <div class="card p-4">
+        <h3 class="text-lg font-semibold">E-commerce</h3>
+        <p class="text-gray-300">Shopping website with payment</p>
+      </div>
+
+      <div class="card p-4">
+        <h3 class="text-lg font-semibold">Blog Website</h3>
+        <p class="text-gray-300">News blogging platform</p>
+      </div>
+
+      <div class="card p-4">
+        <h3 class="text-lg font-semibold">AI Chatbot</h3>
+        <p class="text-gray-300">Support chatbot</p>
+      </div>
+
     </div>
-
-    <div class="project">
-      <h3>Blog Website</h3>
-      <p>Live news blogging platform</p>
-    </div>
-
-    <div class="project">
-      <h3>AI Chatbot</h3>
-      <p>Customer support chatbot using AI</p>
-    </div>
-
   </section>
 
   <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>I am a passionate developer learning and building real world projects.</p>
+  <section class="mt-16 mb-10">
+    <h2 class="text-2xl font-semibold mb-3">About</h2>
+    <p class="text-gray-300">I build modern and responsive websites.</p>
   </section>
 
 </div>
